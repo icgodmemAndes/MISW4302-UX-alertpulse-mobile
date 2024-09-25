@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="device"
+            type="com.alertpulse.myapplication.models.Devices" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/schemesPrimaryContainer"
+            android:backgroundTint="@color/schemesPrimaryContainer"
+            app:cardCornerRadius="3dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/schemesPrimaryContainer"
+            style="@style/MaterialCardItemStyle"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/artistNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="@{device.name}"
+                    android:textSize="@dimen/textAppearanceHeadlineSmall"
+                    tools:text="Mi Band6" />
+
+
+
+
+
+                <!-- First Icon to the Right -->
+                <ImageView
+                    android:id="@+id/deleteAsociateIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_delete_48"
+                    android:contentDescription="First Icon"
+                    android:paddingStart="4dp" />
+
+                <!-- Second Icon to the Right (before the first one) -->
+                <ImageView
+                    android:id="@+id/linkIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/deleteAsociateIcon"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_link_48"
+                    android:contentDescription="Second Icon"
+                    android:paddingEnd="4dp" />
+
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

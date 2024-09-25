@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createremindertest"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/centered_background_one"
+    android:clipToOutline="true"
+    android:theme="@style/Theme.MyApplication"
+    tools:context="com.alertpulse.myapplication.CreateFragment">
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/section_4"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        >
+        <TextView
+            android:id="@+id/crear_nueva"
+            android:layout_centerVertical="true"
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:text="@string/crear_recordatorio"
+
+            android:textAppearance="@style/crear_nueva"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+    </RelativeLayout>
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        android:id="@+id/section_9"
+        android:layout_width="411dp"
+        android:layout_height="150dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_4"
+        >
+
+        <ImageView
+            android:id="@+id/micCreate"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/center_divider"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/baseline_mic_24" />
+
+        <ImageView
+            android:id="@+id/playCreate"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/center_divider"
+            android:src="@drawable/baseline_play_arrow_24" />
+        <TextView
+            android:id="@+id/duration"
+            android:layout_centerVertical="true"
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:text="@string/cero"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/center_divider"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAppearance="@style/duration_time"
+            android:lineSpacingExtra="2sp"
+
+            />
+        <View
+            android:id="@+id/center_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        android:id="@+id/section_6"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/section_9"
+        android:clipToOutline="true">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle2"
+            android:id="@+id/textField7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/seleccionar_fecha"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+
+            app:boxBackgroundColor="@color/schemesPrimaryContainer"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/baseline_calendar_today_24"
+            app:endIconContentDescription="@string/seleccionar_fecha"
+            app:hintTextColor="@color/black"
+            app:endIconTint="@color/schemesSecondary"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/datePickerCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textAppearanceBodyLarge"
+                android:inputType="date"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/section_7"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_6"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle2"
+            android:id="@+id/textField8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/seleccionar_hora"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            app:boxBackgroundColor="@color/schemesPrimaryContainer"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/baseline_access_time_24"
+            app:endIconContentDescription="@string/seleccionar_hora"
+            app:hintTextColor="@color/black"
+            app:endIconTint="@color/schemesSecondary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hourPickerCreate"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:inputType="time"
+                android:textSize="@dimen/textAppearanceBodyLarge"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/section_8"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_7"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle2"
+            android:id="@+id/textField9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/descripcion_del_recordatorio"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            app:boxBackgroundColor="@color/schemesPrimaryContainer"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/black"
+            app:endIconTint="@color/schemesSecondary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textAppearanceBodyLarge"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/section_10"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_8"
+
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CustomExposedDropdownMenu"
+            android:id="@+id/textField10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/seleccionar_tono"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            app:boxBackgroundColor="@color/schemesPrimaryContainer"
+            app:hintTextColor="@color/black"
+            app:endIconTint="@color/schemesSecondary">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:popupBackground="@drawable/custom_popup_background"
+                android:textSize="@dimen/textAppearanceBodyLarge"
+                android:inputType="none"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        android:id="@+id/section_11"
+        android:layout_width="411dp"
+        android:layout_height="150dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_10"
+        >
+
+        <Button
+            android:id="@+id/buttonCancelCreate"
+            android:layout_width="203dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/center_divider_action"
+            android:layout_marginLeft="2dp"
+            android:backgroundTint="@color/schemesPrimary"
+            android:text="@string/cancelar"
+            android:textColor="@color/colorBackground"
+            android:textSize="@dimen/textAppearanceHeadlineSmall" />
+
+        <Button
+            android:id="@+id/buttonAcceptCreate"
+            android:layout_width="203dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/center_divider_action"
+            android:backgroundTint="@color/schemesPrimary"
+            android:text="@string/aceptar"
+            android:textColor="@color/colorBackground"
+            android:textSize="@dimen/textAppearanceHeadlineSmall" />
+
+        <View
+            android:id="@+id/center_divider_action"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>
+

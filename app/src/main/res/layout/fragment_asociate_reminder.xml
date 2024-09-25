@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/asociateremindertest"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/centered_background_two"
+    android:clipToOutline="true"
+    android:theme="@style/Theme.MyApplication"
+    tools:context="com.alertpulse.myapplication.AsociateFragment">
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/section_4"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        >
+        <TextView
+            android:id="@+id/crear_nueva"
+            android:layout_centerVertical="true"
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:text="@string/asociar_recordatorio"
+            android:textAppearance="@style/crear_nueva"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+    </RelativeLayout>
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/section_5"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_4"
+        >
+        <TextView
+            android:id="@+id/asociar_info"
+            android:layout_centerVertical="true"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:text="@string/asociar_info"
+            android:textAppearance="@style/asociar_info"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+    </RelativeLayout>
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        android:id="@+id/section_9"
+        android:layout_width="411dp"
+        android:layout_height="200dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_5"
+        >
+        <ImageView
+            android:id="@+id/watchIcon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/center_divider"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/baseline_watch_48" />
+
+        <ImageView
+            android:id="@+id/tabletIcon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/center_divider"
+            android:src="@drawable/baseline_home_max_48" />
+        <View
+            android:id="@+id/center_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/section_10"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_9"
+        >
+        <TextView
+            android:id="@+id/select_watch"
+            android:layout_centerVertical="true"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/center_divider2"
+            android:text="@string/asociar_watch"
+            android:textAppearance="@style/asociar_dispositivo"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/select_tablet"
+            android:layout_centerVertical="true"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/center_divider2"
+            android:text="@string/asociar_tablet"
+            android:textAppearance="@style/asociar_dispositivo"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+        <View
+            android:id="@+id/center_divider2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
