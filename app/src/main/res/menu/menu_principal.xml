@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alarmaxpro.myapplication.com.alertpulse.myapplication.MainActivity">
+    <item
+        android:id="@+id/RemindersFragment"
+        android:icon="@drawable/baseline_today_24"
+        android:title="@string/menu_recordatorio"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/AsociateFragment"
+        android:icon="@drawable/baselihne_watch_check_48"
+        android:title="@string/menu_asociar"
+        app:showAsAction="never" />
+</menu>
