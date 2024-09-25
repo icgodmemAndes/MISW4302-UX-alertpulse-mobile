@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="reminder"
+            type="com.alertpulse.myapplication.models.Reminders" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/schemesPrimaryContainer"
+            android:backgroundTint="@color/schemesPrimaryContainer"
+            app:cardCornerRadius="3dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/schemesPrimaryContainer"
+            style="@style/MaterialCardItemStyle"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:id="@+id/fragment_reminder_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reminderHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:paddingStart="8dp"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textAppearanceBodyMedium"
+                    android:text="@{reminder.hour}"
+                    tools:text="07:00 am"/>
+
+                <TextView
+                    android:id="@+id/reminderDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:paddingStart="8dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textAppearanceBodyMedium"
+                    android:text="@{reminder.description}"
+                    tools:text="Tomar medicamento"/>
+
+
+                <TextView
+                    android:id="@+id/reminderTone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:paddingStart="8dp"
+                    android:paddingTop="32dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textAppearanceBodyMedium"
+                    android:text="@{reminder.tone}"
+                    tools:text="Pulse"/>
+
+
+                <!-- First Icon to the Right -->
+                <ImageView
+                    android:id="@+id/editReminderIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/deleteReminderIcon"
+                    android:src="@drawable/baseline_edit_24"
+                    android:contentDescription="First Icon"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp" />
+
+                <!-- Second Icon to the Right (before the first one) -->
+                <ImageView
+                    android:id="@+id/playReminderIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/editReminderIcon"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_play_arrow_48"
+                    android:contentDescription="Second Icon"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp" />
+
+                <!-- Third Icon to the Right (before the first one) -->
+                <ImageView
+                    android:id="@+id/deleteReminderIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_delete_48"
+                    android:contentDescription="Third Icon"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

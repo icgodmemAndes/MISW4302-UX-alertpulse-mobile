@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recordScreen"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/centered_background_two"
+    android:clipToOutline="true"
+    android:theme="@style/Theme.MyApplication"
+    tools:context="com.alertpulse.myapplication.RecordFragment">
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/section_4"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        >
+        <TextView
+            android:id="@+id/crear_nueva"
+            android:layout_centerVertical="true"
+            android:layout_width="420dp"
+            android:layout_height="100dp"
+            android:text="@string/grabacion"
+            android:textAppearance="@style/crear_nueva"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+    </RelativeLayout>
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/section_5"
+        android:layout_width="411dp"
+        android:background="@color/schemesPrimaryContainer"
+        android:layout_height="250dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_4"
+        >
+        <ImageView
+            android:id="@+id/recordWave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wave_no_sound"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+            android:id="@+id/duration_record"
+            android:layout_alignParentBottom="true"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cero"
+            android:textAppearance="@style/asociar_info"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+    </RelativeLayout>
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        android:id="@+id/section_9"
+        android:layout_width="411dp"
+        android:layout_height="300dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_5"
+        >
+        <!-- First icon centered in the first half -->
+        <ImageView
+            android:id="@+id/iconStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_stop_circle_48"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/iconRecord"
+            />
+
+        <!-- Second icon centered in the middle (between the first and second half) -->
+        <ImageView
+            android:id="@+id/iconRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mic_circle_120"
+            android:layout_centerInParent="true"
+            />
+
+        <!-- Third icon centered in the second half -->
+        <ImageView
+            android:id="@+id/iconPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_pause_circle_outline_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/iconRecord"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/section_10"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:clipToOutline="true"
+        android:layout_below="@id/section_9"
+        >
+        <Button
+            android:id="@+id/buttonCancelRecord"
+            android:layout_width="203dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/center_divider2"
+            android:layout_marginLeft="2dp"
+            android:backgroundTint="@color/schemesPrimary"
+            android:text="@string/cancelar"
+            android:textColor="@color/colorBackground"
+            android:textSize="@dimen/textAppearanceHeadlineSmall" />
+
+        <Button
+            android:id="@+id/buttonAcceptRecord"
+            android:layout_width="203dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/center_divider2"
+            android:backgroundTint="@color/schemesPrimary"
+            android:text="@string/aceptar"
+            android:textColor="@color/colorBackground"
+            android:textSize="@dimen/textAppearanceHeadlineSmall" />
+        <View
+            android:id="@+id/center_divider2"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
