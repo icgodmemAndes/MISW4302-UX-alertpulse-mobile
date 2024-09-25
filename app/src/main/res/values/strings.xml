@@ -1,3 +1,112 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">AlertPulse</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Password</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="olvide_contrasena">OLVIDE CONTRASENA</string>
+    <string name="nuevo_usuario">NUEVO USUARIO</string>
+    <string name="configuraciones">Configuraciones</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recordatorios">Recordatorios</string>
+    <string name="alarmas">Alarmas</string>
+    <string name="dispositivos">Dispositivos</string>
+    <string name="title1">Hike</string>
+    <string name="time1">05:00 A.M.</string>
+    <string name="time2">06:00 A.M.</string>
+    <string name="time3">05:00 P.M.</string>
+    <string name="days1_1">Lu Ma Mi Ju Vi</string>
+    <string name="days1_2">Sa Do</string>
+    <string name="days2_1">Lu</string>
+    <string name="days2_2">Ma Mi Ju</string>
+    <string name="days2_3">Vi</string>
+    <string name="title2">Trabajo</string>
+    <string name="title3">Clase de Maestria</string>
+    <string name="alarmastitle">Alarmas</string>
+    <string name="detalleAlarma">Detalle de Alarma</string>
+    <string name="opciones_de_alarma">Opciones de Alarma</string>
+    <string name="opciones">Opciones</string>
+    <string name="snooze">Snooze</string>
+    <string name="apagar">Apagar</string>
+    <string name="leer_texto">Leer Texto</string>
+    <string name="operacion_matematica">Operacion Matematica</string>
+    <string name="snoozes_antes_de_apagar">Snoozes antes de Apagar</string>
+    <string name="repetir_al_equivocarse">Repetir al Equivocarse</string>
+    <string name="editar_alarma">Editar Alarma</string>
+
+
+    <string name="nueva_alarma">Nueva Alarma</string>
+    <string name="configuraciones_title">Configuraciones</string>
+    <string name="formato_de_hora">Formato de Hora</string>
+    <string name="formato_de_fecha">Formato de Fecha</string>
+    <string name="ahorro_de_energia">Ahorro de Energia</string>
+    <string name="no_molestar">No Molestar</string>
+    <string name="notificacion_de_respaldo">Notificacion de Respaldo</string>
+    <string name="vibracion">Vibracion</string>
+    <string name="cofigurar_pantalla">Configurar Pantalla</string>
+    <string name="restaurar_backup">Restaurar Backup</string>
+    <string name="volumen_maestro">Volumen Maestro</string>
+    <string name="jueves">Jueves</string>
+    <string name="miercoles">Miercoles</string>
+    <string name="martes">Martes</string>
+    <string name="lunes">Lunes</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sabado</string>
+    <string name="domingo">Domingo</string>
+    <string name="detalles">Detalles</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <!-- TODO: Alert Pulse Resources -->
+    <string name="sign_up_fragment_label">SignUp Fragment</string>
+    <string name="create_fragment_label">Create Fragment</string>
+    <string name="edit_fragment_label">Edit Fragment</string>
+    <string name="asociate_fragment_label">Asociate Fragment</string>
+    <string name="asociate_select_fragment_label">Asociate Select Fragment</string>
+    <string name="list_fragment_label">List Fragment</string>
+    <string name="record_fragment_label">Record Fragment</string>
+    <string name="crear_nueva_cuenta">Crear nueva cuenta</string>
+    <string name="ya_registrado">Ya te encuentras registrado? Si es asi, ingresa al siguiente
+        enlace para iniciar tu sesión </string>
+    <string name="aqui">Aqui.</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="nombre">Nombre</string>
+    <string name="email">Email</string>
+    <string name="constrasena">Contraseña</string>
+    <string name="repetir_contrasena">Repetir Contraseña</string>
+    <string name="grabacion">Grabación</string>
+    <string name="cero">00:00:00</string>
+    <string name="no_registrado">No estas registrado? Registrate accediendo a este enlace </string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="lista_de_recordatorios">Lista de Recordatorios</string>
+    <string name="asociar">Asociar</string>
+    <string name="crear_recordatorio">Crear Recordatorio</string>
+    <string name="seleccionar_fecha">Seleccionar Fecha</string>
+    <string name="seleccionar_hora">Seleccionar hora</string>
+    <string name="descripcion_del_recordatorio">Descripción del recordatorio</string>
+    <string name="seleccionar_tono">Seleccionar tono</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="crear">Crear</string>
+    <string name="editar_recordatorio">Editar Recordatorio</string>
+    <string name="asociar_recordatorio">Asociar Recordatorio</string>
+    <string name="asociar_info">Puedes enviar tu recordatorio a otros dispositivos para tener mejor control</string>
+    <string name="asociar_watch">Selecciona para asociar recordatorio con smartWatch</string>
+    <string name="asociar_tablet">Selecciona para asociar recordatorio con Tablet</string>
+    <string name="asociar_selecciona">Selecciona el dispositivo cercano</string>
+    <string name="menu_recordatorio">Recordatorios</string>
+    <string name="menu_asociar">Asociar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="option1">Pulse</string>
+    <string name="option2">Bell</string>
+    <string name="option3">Cry</string>
+    <string name="date_one">30 de Septiembre de 2024</string>
+
+
+
 </resources>
