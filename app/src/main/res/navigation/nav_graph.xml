@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.alertpulse.myapplication.SignUpFragment"
+        android:label="@string/sign_up_fragment_label"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/actionSignUpFragmentToRemindersFragment"
+            app:destination="@id/RemindersFragment" />
+        <action
+            android:id="@+id/actionSignUpFragmentToLoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/actionSignUpFragmentToRecordFragment"
+            app:destination="@id/RecordFragment" >
+
+        </action>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.alertpulse.myapplication.LoginFragment"
+        android:label="@string/sign_up_fragment_label"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/actionLoginFragmentToRemindersFragment"
+            app:destination="@id/RemindersFragment" />
+
+        <action
+            android:id="@+id/actionLoginFragmentToSignUpFragment"
+            app:destination="@id/SignUpFragment" />
+
+        <action
+            android:id="@+id/actionLoginFragmentToRecordFragment"
+            app:destination="@id/RecordFragment" >
+
+        </action>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CreateFragment"
+        android:name="com.alertpulse.myapplication.CreateFragment"
+        android:label="@string/create_fragment_label"
+        tools:layout="@layout/fragment_create_reminder">
+        <action
+            android:id="@+id/actionCreateFragmentToRemindersFragment"
+            app:destination="@id/RemindersFragment" />
+        <action
+            android:id="@+id/actionCreateFragmentToRecordFragment"
+            app:destination="@id/RecordFragment" >
+
+        </action>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditFragment"
+        android:name="com.alertpulse.myapplication.EditFragment"
+        android:label="@string/edit_fragment_label"
+        tools:layout="@layout/fragment_edit_reminder">
+        <action
+            android:id="@+id/actionEditFragmentToRemindersFragment"
+            app:destination="@id/RemindersFragment" />
+        <action
+            android:id="@+id/actionEditFragmentToRecordFragment"
+            app:destination="@id/RecordFragment" >
+
+        </action>
+
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AsociateFragment"
+        android:name="com.alertpulse.myapplication.AsociateFragment"
+        android:label="@string/asociate_fragment_label"
+        tools:layout="@layout/fragment_asociate_reminder">
+        <action
+            android:id="@+id/actionAsociateFragmentToAsociateSelectFragment"
+            app:destination="@id/AsociateSelectFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AsociateSelectFragment"
+        android:name="com.alertpulse.myapplication.AsociateSelectFragment"
+        android:label="@string/asociate_select_fragment_label"
+        tools:layout="@layout/fragment_asociate_select_reminder">
+        <action
+            android:id="@+id/actionAsociateSelectFragmentToAsociateFragment"
+            app:destination="@id/AsociateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RemindersFragment"
+        android:name="com.alertpulse.myapplication.RemindersFragment"
+        android:label="@string/list_fragment_label"
+        tools:layout="@layout/fragment_list_reminder">
+        <action
+            android:id="@+id/actionListFragmentToEditFragment"
+            app:destination="@id/EditFragment" >
+            <argument
+                android:name="Id"
+                app:argType="integer"/>
+        </action>
+
+
+        <action
+            android:id="@+id/actionListFragmentToDeleteFragment"
+            app:destination="@id/AsociateFragment" />
+        <action
+            android:id="@+id/actionListFragmentToAsociateFragment"
+            app:destination="@id/AsociateFragment" />
+        <action
+            android:id="@+id/actionListFragmentToCreateFragment"
+            app:destination="@id/CreateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecordFragment"
+        android:name="com.alertpulse.myapplication.RecordFragment"
+        android:label="@string/record_fragment_label"
+        tools:layout="@layout/fragment_record">
+        <action
+            android:id="@+id/actionRecordFragmentToSignUpFragment"
+            app:destination="@id/SignUpFragment" />
+        <action
+            android:id="@+id/actionRecordFragmentToLoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/actionRecordFragmentToEditFragment"
+            app:destination="@id/EditFragment" />
+        <action
+            android:id="@+id/actionRecordFragmentToCreateFragment"
+            app:destination="@id/CreateFragment" />
+        <argument
+            android:name="originArg"
+            app:argType="integer"
+            />
+    </fragment>
+
+
+</navigation>
