@@ -40,7 +40,7 @@ Repositorio para la entrega final del Proyecto MISW-4302-2024 Version Movil
 
 
 2. Esperar una salida de la consola similar a la siguiente imagen:
-![image](https://github.com/user-attachments/assets/40139f73-8e2f-4b1f-b145-734f9a7bee63)
+![image](https://github.com/user-attachments/assets/8ce7db2a-d9f5-466e-8307-b0e4cd9e7148)
 
 
 ### Pasos para Generar APK
