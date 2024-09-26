@@ -29,15 +29,9 @@ Repositorio para la entrega final del Proyecto MISW-4302-2024 Version Movil
 
 | Diferencia  | Imagen del Mockup | Imagen del Maquetado | Justificacion del Cambio |
 |-------------|-------------------|----------------------|--------------------------|
-| Menu de navegación inferior |![image](https://github.com/user-attachments/assets/52d9c428-d39f-4e99-934e-8f792b93587d)
-  | ![image](https://github.com/user-attachments/assets/beb88ab9-94a4-48cb-aba6-393114adda03)
- | Por componentes de material design, se tiene un tamaño reducido de los iconos inferiores de navegación, se usa color de contraste para diferencia el fondo, queda en negrita y ligeramente sombreado al estar la pantalla en una u otra pantalla. Por recomendación del tutor se adiciona texto a cada icono, el botón de crear recordatorio deja de ser menú y ahora es un icono plus en la parte inferior derecha|
-| Lista de recordatorios |![image](https://github.com/user-attachments/assets/3b0207c4-01b6-4fe6-8b00-7fad32c942d8)
-  |![image](https://github.com/user-attachments/assets/05ccd5c3-bcd5-4fe4-bd2f-d2f1487f08d7)
-  | En el diseño original se tenia cada opción dibujada sobre el fondo. Por recomendación del tutor se adiciona fondo de contraste a cada opción |
-| Pantalla de grabación | ![image](https://github.com/user-attachments/assets/ac38095b-d126-4206-95eb-eb2dc029c441)
- | ![image](https://github.com/user-attachments/assets/9e102dce-cd1e-4d99-9c0e-3eb6502c9e02)
- | Por recomendación del tutor, se adiciona botón de aceptar y cancelar una vez el usuario ha terminado alguna grabación de voz. |
+| Menu de navegación inferior |![image](https://github.com/user-attachments/assets/52d9c428-d39f-4e99-934e-8f792b93587d)| ![image](https://github.com/user-attachments/assets/beb88ab9-94a4-48cb-aba6-393114adda03) | Por componentes de material design, se tiene un tamaño reducido de los iconos inferiores de navegación, se usa color de contraste para diferencia el fondo, queda en negrita y ligeramente sombreado al estar la pantalla en una u otra pantalla. Por recomendación del tutor se adiciona texto a cada icono, el botón de crear recordatorio deja de ser menú y ahora es un icono plus en la parte inferior derecha|
+| Lista de recordatorios |![image](https://github.com/user-attachments/assets/3b0207c4-01b6-4fe6-8b00-7fad32c942d8) |![image](https://github.com/user-attachments/assets/05ccd5c3-bcd5-4fe4-bd2f-d2f1487f08d7) | En el diseño original se tenia cada opción dibujada sobre el fondo. Por recomendación del tutor se adiciona fondo de contraste a cada opción |
+| Pantalla de grabación | ![image](https://github.com/user-attachments/assets/ac38095b-d126-4206-95eb-eb2dc029c441) | ![image](https://github.com/user-attachments/assets/9e102dce-cd1e-4d99-9c0e-3eb6502c9e02) | Por recomendación del tutor, se adiciona botón de aceptar y cancelar una vez el usuario ha terminado alguna grabación de voz. |
 
 
 ### Pasos para hacer Build
